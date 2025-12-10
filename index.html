@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Kit - JavaScript30</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1>Drum Kit</h1>
+        <p>Presiona las teclas A S D F G H J K L o haz click en los pads</p>
+
+        <div class="keys">
+            <div data-key="65" class="key">
+                <kbd>A</kbd>
+                <span class="sound">clap</span>
+            </div>
+            <div data-key="83" class="key">
+                <kbd>S</kbd>
+                <span class="sound">hihat</span>
+            </div>
+            <div data-key="68" class="key">
+                <kbd>D</kbd>
+                <span class="sound">kick</span>
+            </div>
+            <!-- Añade más keys conforme necesites -->
+        </div>
+
+        <!-- audios -->
+        <audio data-key="65" src="assets/sounds/clap.wav"></audio>
+        <audio data-key="83" src="assets/sounds/hihat.wav"></audio>
+        <audio data-key="68" src="assets/sounds/kick.wav"></audio>
+
+    </main>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
